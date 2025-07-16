@@ -1,26 +1,44 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #F2ECBC;
+    --background-highlight: #C9CBD1;
+    --foreground: #545464;
+    --foreground-highlight: #43436C;
+    --foreground-secondary: #8A8980;
+    --foreground-colored-1: #6F894E;
+    --foreground-colored-2: #C84053;
+    --foreground-colored-3: #4D699B;
+}
+
+.dark {
+    --background: #181616;
+    --background-highlight: #2D4F67;
+    --foreground: #C5C9C5;
+    --foreground-highlight: #C8C093;
+    --foreground-secondary: #A6A69C;
+    --foreground-colored-1: #8A9A7B;
+    --foreground-colored-2: #C4746E;
+    --foreground-colored-3: #8BA4B0;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-background-highlight: var(--background-highlight);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-foreground-highlight: var(--foreground-highlight);
+  --color-foreground-secondary: var(--foreground-secondary);
+  --color-foreground-colored-1: var(--foreground-colored-1);
+  --color-foreground-colored-2: var(--foreground-colored-2);
+  --color-foreground-colored-3: var(--foreground-colored-3);
+  --font-sans: var(--font-rubik-sans);
+  --font-mono: var(--font-gohu-mono);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-rubik-sans);
 }
