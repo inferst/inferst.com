@@ -89,6 +89,8 @@ const Face = () => {
           className={`cursor-pointer block absolute top-0 left-0`}
           onMouseDown={handleMouseDown}
           onMouseUp={handleMouseUp}
+          onTouchStart={handleMouseDown}
+          onTouchEnd={handleMouseUp}
         >
           <div
             className={`w-[var(--width)] h-[var(--height)] block`}
