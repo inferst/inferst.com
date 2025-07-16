@@ -84,7 +84,7 @@ const Face = () => {
           className="rounded-xl subpixel-antialiased"
           style={{ imageRendering: "pixelated" } as CSSProperties}
         />
-        <Link
+        <a
           href="/"
           className={`cursor-pointer block absolute top-0 left-0`}
           onMouseDown={handleMouseDown}
@@ -104,7 +104,7 @@ const Face = () => {
               } as CSSProperties
             }
           ></div>
-        </Link>
+        </a>
       </div>
     </div>
   );

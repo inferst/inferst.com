@@ -26,10 +26,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${rubikFont.variable} ${gohuFont.variable} antialiased`}>
+      <body
+        className={`${rubikFont.variable} ${gohuFont.variable} antialiased`}
+      >
         <ThemeProvider enableSystem={true} attribute="class">
           {children}
         </ThemeProvider>
+        <script
+          data-collect-dnt="true"
+          async
+          src="https://scripts.simpleanalyticscdn.com/latest.js"
+        ></script>
+        <noscript>
+          <img
+            src="https://queue.simpleanalyticscdn.com/noscript.gif?collect-dnt=true"
+            alt=""
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </noscript>
       </body>
     </html>
   );

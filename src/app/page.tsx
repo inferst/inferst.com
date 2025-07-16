@@ -16,8 +16,9 @@ export default function Home() {
               I specialize in web development, mostly focused on frontend. But I
               also love exploring new technologies — from Rust to Godot.
               I&apos;m a big fan of Neovim and always enjoy tweaking my workflow
-              (Sometimes not really).
+              (Not really).
             </p>
+            <p className="text-xl">Sometimes I stream on Twitch.</p>
           </section>
           <section className="flex flex-col gap-[16px]">
             <h2 className="text-xl font-bold text-foreground-colored-2">
@@ -25,7 +26,11 @@ export default function Home() {
             </h2>
             <div className="border-1 border-foreground-secondary px-4 py-2 rounded-lg w-full">
               <h3 className="text-xl">
-                <Link href="https://evotars.inferst.com" target="_blank" className="hover:underline">
+                <Link
+                  href="https://evotars.inferst.com"
+                  target="_blank"
+                  className="hover:underline"
+                >
                   Evotars
                 </Link>
               </h3>
@@ -34,13 +39,21 @@ export default function Home() {
               </p>
             </div>
             <div className="border-1 border-foreground-secondary px-4 py-2 rounded-lg w-full">
-              <h3 className="text-xl">Touchdeck</h3>
+              <h3 className="text-xl">Touchdeck (In progress)</h3>
               <p className="text-foreground-secondary">Deck for Streamer Bot</p>
             </div>
             <div className="border-1 border-foreground-secondary px-4 py-2 rounded-lg w-full">
-              <h3 className="text-xl">Word Game</h3>
+              <h3 className="text-xl">
+                <Link
+                  href="https://slovo.inferst.com"
+                  target="_blank"
+                  className="hover:underline"
+                >
+                  Slovo
+                </Link>
+              </h3>
               <p className="text-foreground-secondary">
-                Simple Guess Word Game in Russian
+                Guess the word in Russian with Twitch chatters
               </p>
             </div>
           </section>
@@ -67,12 +80,6 @@ export default function Home() {
               >
                 Telegram
               </a>
-              {/* <a */}
-              {/*   href="https://github.com/inferst" */}
-              {/*   className="rounded-sm px-3 py-1 text-sm bg-background-highlight hover:bg-foreground-highlight hover:text-background" */}
-              {/* > */}
-              {/*   Linkedin */}
-              {/* </a> */}
               <a
                 href="https://www.twitch.tv/mikerime"
                 className="rounded-sm px-3 py-1 text-sm bg-background-highlight hover:bg-foreground-highlight hover:text-background"
