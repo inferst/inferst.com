@@ -5,14 +5,14 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
-      <div className=" max-w-screen-sm p-6 pb-20">
+      <div className=" max-w-screen-sm p-6">
         <main className="flex-1 gap-[64px] flex flex-col">
           <Face />
           <section>
             <h1 className="text-xl font-bold text-foreground-colored-1 mb-[8px]">
               Hi! I&apos;m Mike.
             </h1>
-            <p className="text-xl">
+            <p className="text-xl mb-2">
               I specialize in web development, mostly focused on frontend. But I
               also love exploring new technologies — from Rust to Godot.
               I&apos;m a big fan of Neovim and always enjoy tweaking my workflow
@@ -89,7 +89,7 @@ export default function Home() {
             </div>
           </section>
         </main>
-        <footer className="flex items-center justify-center mt-20">
+        <footer className="flex items-center justify-center my-16">
           <ThemeChanger />
         </footer>
       </div>
