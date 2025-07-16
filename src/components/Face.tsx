@@ -69,7 +69,7 @@ const Face = () => {
     return () => {
       document.removeEventListener("mousemove", onMouseMove);
     };
-  }, []);
+  }, [onMouseMove]);
 
   return (
     <div className="flex justify-center">
