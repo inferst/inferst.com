@@ -1,4 +1,5 @@
 import Face from "@/components/Face";
+import Project from "@/components/Project";
 import ThemeChanger from "@/components/ThemeChanger";
 import Link from "next/link";
 
@@ -15,8 +16,11 @@ export default function Home() {
             <p className="text-xl mb-2">
               I specialize in web development, mostly focused on frontend. But I
               also love exploring new technologies — from Rust to Godot.
-              I&apos;m a big fan of Neovim and always enjoy tweaking my workflow
-              (Not really).
+            </p>
+            <p className="text-xl mb-2">
+              I&apos;m a big fan of Neovim and always enjoy tweaking
+              <br />
+              my workflow (Not really).
             </p>
             <p className="text-xl">Sometimes I stream on Twitch.</p>
           </section>
@@ -24,38 +28,20 @@ export default function Home() {
             <h2 className="text-xl font-bold text-foreground-colored-2">
               Projects
             </h2>
-            <div className="border-1 border-foreground-secondary px-4 py-2 rounded-lg w-full">
-              <h3 className="text-xl">
-                <Link
-                  href="https://evotars.inferst.com"
-                  target="_blank"
-                  className="hover:underline"
-                >
-                  Evotars
-                </Link>
-              </h3>
-              <p className="text-foreground-secondary">
-                Web-based overlay that adds animated avatars for Twitch chatters
-              </p>
-            </div>
-            <div className="border-1 border-foreground-secondary px-4 py-2 rounded-lg w-full">
-              <h3 className="text-xl">Touchdeck (In progress)</h3>
-              <p className="text-foreground-secondary">Deck for Streamer Bot</p>
-            </div>
-            <div className="border-1 border-foreground-secondary px-4 py-2 rounded-lg w-full">
-              <h3 className="text-xl">
-                <Link
-                  href="https://slovo.inferst.com"
-                  target="_blank"
-                  className="hover:underline"
-                >
-                  Slovo
-                </Link>
-              </h3>
-              <p className="text-foreground-secondary">
-                Guess the word in Russian with Twitch chatters
-              </p>
-            </div>
+            <Project
+              title="Evotars"
+              description="Web-based overlay that adds animated avatars for Twitch chatters"
+              link="https://evotars.inferst.com"
+            />
+            <Project
+              title="Touch Deck (In progress)"
+              description="Deck for Streamer Bot"
+            />
+            <Project
+              title="Slovo"
+              description="Guess the word in Russian with Twitch chatters"
+              link="https://slovo.inferst.com"
+            />
           </section>
           <section className="flex flex-col gap-[8px]">
             <h2 className="text-xl text-foreground-colored-3 font-bold">

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Rubik } from "next/font/google";
-import "./globals.css";
 import { ThemeProvider } from "next-themes";
+import { Rubik } from "next/font/google";
 import localFont from "next/font/local";
+import "./globals.css";
 
 const gohuFont = localFont({
   variable: "--font-gohu-mono",
