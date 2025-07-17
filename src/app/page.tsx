@@ -1,7 +1,6 @@
 import Face from "@/components/Face";
 import Project from "@/components/Project";
 import ThemeChanger from "@/components/ThemeChanger";
-import Link from "next/link";
 
 export default function Home() {
   return (
