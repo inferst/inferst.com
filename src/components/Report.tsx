@@ -4,15 +4,12 @@ import { cn } from "@/lib/utils";
 import { useLayoutEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-const randWidth = 400;
-const randHeight = 400;
-
 const Report = () => {
   const ref = useRef<HTMLButtonElement | null>(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isClicked, setIsClicked] = useState(false);
 
-  const moveReportButton = (currentX: number, currentY: number) => {
+  const moveReportButton = () => {
     if (ref.current) {
       const buttonRect = ref.current.getBoundingClientRect();
 
@@ -29,15 +26,12 @@ const Report = () => {
     }
   };
 
-  const handleTouchStart = (event: React.TouchEvent) => {
-    moveReportButton(
-      event.changedTouches[0].clientX,
-      event.changedTouches[0].clientY,
-    );
+  const handleTouchStart = () => {
+    moveReportButton();
   };
 
-  const handleMouseDown = (event: React.MouseEvent) => {
-    moveReportButton(event.pageX, event.pageY);
+  const handleMouseDown = () => {
+    moveReportButton();
   };
 
   useLayoutEffect(() => {
