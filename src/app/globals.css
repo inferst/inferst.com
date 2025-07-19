@@ -11,6 +11,7 @@
     --foreground-colored-1: #6F894E;
     --foreground-colored-2: #C84053;
     --foreground-colored-3: #4D699B;
+    --foreground-colored-4: #B35B79;
 }
 
 .dark {
@@ -22,6 +23,7 @@
     --foreground-colored-1: #8A9A7B;
     --foreground-colored-2: #C4746E;
     --foreground-colored-3: #8BA4B0;
+    --foreground-colored-4: #A292A3;
 }
 
 @theme inline {
@@ -33,6 +35,7 @@
   --color-foreground-colored-1: var(--foreground-colored-1);
   --color-foreground-colored-2: var(--foreground-colored-2);
   --color-foreground-colored-3: var(--foreground-colored-3);
+  --color-foreground-colored-4: var(--foreground-colored-4);
   --font-sans: var(--font-rubik-sans);
   --font-mono: var(--font-gohu-mono);
 }

@@ -1,5 +1,6 @@
 import Face from "@/components/Face";
 import Project from "@/components/Project";
+import Report from "@/components/Report";
 import ThemeChanger from "@/components/ThemeChanger";
 
 export default function Home() {
@@ -72,6 +73,13 @@ export default function Home() {
                 Twitch
               </a>
             </div>
+          </section>
+          <section className="flex flex-col gap-[8px]">
+            <h2 className="text-xl text-foreground-colored-4 font-bold">Report</h2>
+            <p>
+              If you encounter any inappropriate content or are dissatisfied
+              with the website owner, please feel free to submit a <Report />.
+            </p>
           </section>
         </main>
         <footer className="flex items-center justify-center my-16">
