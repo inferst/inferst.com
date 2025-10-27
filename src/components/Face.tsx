@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { CSSProperties, useCallback, useEffect, useRef, useState } from "react";
 
 const width = 235;
@@ -74,14 +75,25 @@ const Face = () => {
   return (
     <div className="flex justify-center">
       <div className="relative">
-        <img
+        <Image
           ref={ref}
           aria-hidden
           src="/face.png"
           alt="Face"
           width={width}
           height={height}
+          quality={100}
           className="rounded-xl subpixel-antialiased"
+          style={{ imageRendering: "pixelated" } as CSSProperties}
+        />
+        <Image
+          aria-hidden
+          src="/face.png"
+          alt="Face Blur"
+          width={width}
+          height={height}
+          quality={100}
+          className="rounded-xl subpixel-antialiased blur-xl -z-10 absolute top-0 left-0"
           style={{ imageRendering: "pixelated" } as CSSProperties}
         />
         <Link
