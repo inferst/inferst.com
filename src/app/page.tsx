@@ -37,11 +37,6 @@ export default function Home() {
               title="Touch Deck (In progress)"
               description="Deck for Streamer Bot"
             />
-            <Project
-              title="Slovo"
-              description="Guess the word in Russian with Twitch chatters"
-              link="https://slovo.inferst.com"
-            />
           </section>
           <section className="flex flex-col gap-[8px]">
             <h2 className="text-xl text-foreground-colored-3 font-bold">
