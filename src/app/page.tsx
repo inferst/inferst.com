@@ -34,8 +34,9 @@ export default function Home() {
               link="https://evotars.inferst.com"
             />
             <Project
-              title="Touch Deck (In progress)"
-              description="Deck for Streamer Bot"
+              title="Fluxta"
+              description="Automate events, build your own controls, and extend everything with plugins"
+              link="https://fluxta.app"
             />
           </section>
           <section className="flex flex-col gap-[8px]">

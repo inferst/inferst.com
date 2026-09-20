@@ -7,17 +7,28 @@ type ProjectProps = {
 };
 
 const Project = (props: ProjectProps) => {
+  const content = (
+    <>
+      <h3 className="text-xl">{props.title}</h3>
+      <p className="text-foreground-secondary">{props.description}</p>
+    </>
+  );
+
+  if (props.link) {
+    return (
+      <Link
+        href={props.link}
+        target="_blank"
+        className="border-1 border-foreground-secondary px-4 py-2 rounded-lg w-full block transition-colors hover:border-foreground-highlight hover:bg-background-highlight"
+      >
+        {content}
+      </Link>
+    );
+  }
+
   return (
     <div className="border-1 border-foreground-secondary px-4 py-2 rounded-lg w-full">
-      <h3 className="text-xl">
-        {props.link && (
-          <Link href={props.link} target="_blank" className="hover:underline">
-            {props.title}
-          </Link>
-        )}
-        {!props.link && props.title}
-      </h3>
-      <p className="text-foreground-secondary">{props.description}</p>
+      {content}
     </div>
   );
 };
